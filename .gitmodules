@@ -1,0 +1,12 @@
+[submodule "bundle/vim-perl"]
+	path = bundle/vim-perl
+	url = https://github.com/vim-perl/vim-perl.git
+[submodule "bundle/mojo"]
+	path = bundle/mojo
+	url = https://github.com/vim-scripts/mojo.vim.git
+[submodule "bundle/my-vim-colors"]
+	path = bundle/my-vim-colors
+	url = git@github.com:hemmop/vim-colors.git
+[submodule "bundle/vim-fugitive"]
+	path = bundle/vim-fugitive
+	url = https://github.com/tpope/vim-fugitive.git
