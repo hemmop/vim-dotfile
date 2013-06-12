@@ -1,7 +1,16 @@
 " Things that applies to perl code
-setlocal shiftwidth=2					" indent/outdent by two chars
-setlocal list						" show white space
-setlocal listchars=tab:>.,trail:.,extends:#,nbsp:.  	" chars to show instead of white space
+"
+" I like to use 2 chars indentation
+setlocal shiftwidth=2
+setlocal softtabstop=2
+
+" No tabs in file
+setlocal expandtab
+
+" show white space in editor
+setlocal list
+" chars to show instead of white space
+setlocal listchars=tab:>.,trail:.,extends:#,nbsp:.
 
 " set up perl compiler
-"autocmd BufNewFile,BufRead *.p? compiler perl
+autocmd BufNewFile,BufRead *.p? compiler perl

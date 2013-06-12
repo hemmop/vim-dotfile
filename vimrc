@@ -12,6 +12,7 @@ filetype indent on
 set visualbell		" visual bell instead of beeping
 set nowrap		" do not wrap
 set tabstop=8           " tabs is 8
+set softtabstop=4       " <tab> indents 4 chars
 set shiftwidth=4        " indent/outdent by four chars
 set autoindent          " use autoindent
 set shiftround		" use multiples of shift width indenting/outdenting
