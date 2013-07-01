@@ -13,4 +13,14 @@ setlocal list
 setlocal listchars=tab:>.,trail:.,extends:#,nbsp:.
 
 " set up perl compiler
-autocmd BufNewFile,BufRead *.p? compiler perl
+autocmd BufNewFile,BufRead *.{pl,pm,PL,t} compiler perl
+
+" remove trailing white space function
+function! RemoveTrailingWhitespace()
+    let save_cursor = getpos(".")
+    :%s/\s\+$//e
+    call setpos('.', save_cursor)
+:endfunction
+
+" remove trailing white space on writes
+autocmd BufWritePre *.{pl,pm,PL,t} :call RemoveTrailingWhitespace()
