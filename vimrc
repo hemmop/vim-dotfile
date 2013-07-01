@@ -19,6 +19,7 @@ set shiftround		" use multiples of shift width indenting/outdenting
 set ignorecase		" ignore case when searching
 set hidden		" hide buffers instead of closing them
 set modeline		" enable modeline
+set laststatus=2        " always show status line
 
 " disable backups
 set nobackup
